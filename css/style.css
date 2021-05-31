@@ -67,7 +67,7 @@ img {
 
 @media (max-width: 739px) {
   .container {
-    max-width: 300px;
+    max-width: 420px;
     flex-direction: column;
   }
 
@@ -124,6 +124,7 @@ section {
   .showcase .brand {
     width: inherit;
     position: absolute;
+    text-align: center;
     top: 32%;
     z-index: 2;
     display: flex;
@@ -140,9 +141,9 @@ section {
       font-size: 2rem; }
   @media screen and (max-width: 720px) {
     .showcase .brand h1 {
-      font-size: 3.2rem; }
+      font-size: 4.2rem; }
     .showcase .brand h2 {
-      font-size: 1rem; } }
+      font-size: 1.5rem; } }
 
 /* Navbar */
 #navbar {
@@ -170,7 +171,7 @@ section {
   padding: .25rem .75rem;
   font-size: 1.25rem;
   line-height: 1;
-  /*background-color: transparent;*/
+  *background-color: transparent;
   text-transform: none;
   overflow: visible;
 }
@@ -183,8 +184,8 @@ section {
   content: "";
   background: no-repeat center center;
   background-size: 100% 100%; 
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='#0061d5' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
-  background-color: #fff;
+  background-image: url("../img/menu.png");
+  background-color: transparent;
   /*border: 1px solid #fff;*/
 }
 
@@ -243,7 +244,7 @@ section {
 .navbar-brand img {
   display: block;
   position: static;
-  width: 90%;
+  width: 100%;
   margin: 0 auto;
   bottom: 0;
 }
@@ -268,7 +269,7 @@ section {
     width: 150px;
     height: 100vh;
     left: -150px;
-    background-color:  #db1616;
+    background-color:  #d3d3d3;
     transition: left .8s ease;
   }
 
@@ -281,13 +282,13 @@ section {
   }
 
   .navbar-nav {
-    flex-direction: column;
+    flex-direction: column-reverse;
   }
   .nav-item:first-child{
     display: initial;
   }
   .nav-item a {
-    color: #fff;
+    color: rgb(34, 32, 32);
   }
 }
 
